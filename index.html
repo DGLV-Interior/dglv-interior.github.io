@@ -18,10 +18,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <!-- <div id="splash">
-      <img src="images/logo/Horiz Gold-01.png" alt="DGLV Interior Logo" class="splash-logo" />
-    </div> -->
-    <section>
+    <!-- <section>
       <div id="preloader">
         <div id="ctn-preloader" class="ctn-preloader">
           <div class="animation-preloader">
@@ -41,7 +38,54 @@
           <div class="loader-section section-right"></div>
         </div>
       </div>
+
+    </section> -->
+
+    <!-- Loader Section -->
+    <section id="loader">
+      <div class="loader-container">
+        <div class="logo-wrapper">
+          <!-- Place your logo image -->
+          <img src="images/logo/Horiz Gold-01.png" alt="DK Home Decorz" class="loader-logo" />
+          <div class="txt-loading">
+            <span data-text-preloader="I" class="letters-loading">I</span>
+            <span data-text-preloader="N" class="letters-loading">N</span>
+            <span data-text-preloader="T" class="letters-loading">T</span>
+            <span data-text-preloader="E" class="letters-loading">E</span>
+            <span data-text-preloader="R" class="letters-loading">R</span>
+            <span data-text-preloader="I" class="letters-loading">I</span>
+            <span data-text-preloader="O" class="letters-loading">O</span>
+            <span data-text-preloader="R" class="letters-loading">R</span>
+          </div>
+        </div>
+        <div class="loader-tagline">
+          <span>Dream Great Living Venue</span>
+        </div>
+        <div class="loader-progress">
+          <span class="bar"></span>
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
     </section>
+
+    <script>
+      /* Hide loader after page load */
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("loader");
+        // slide away background panels quickly
+        document.querySelector(".section-left").style.transform = "translateX(-100%)";
+        document.querySelector(".section-right").style.transform = "translateX(100%)";
+        if (loader) {
+          setTimeout(() => {
+            loader.style.opacity = "0";
+            loader.style.transition = "opacity 1s ease";
+            setTimeout(() => (loader.style.display = "none"), 1000);
+          }, 1000); // keeps loader visible briefly
+        }
+      });
+    </script>
+
     <!-- Preloader End -->
     <!-- Header Area Start -->
     <header class="header-style-01">
@@ -657,16 +701,19 @@
                 </p>
                 <ul class="social-list">
                   <li>
-                    <a href="https://www.facebook.com/profile.php?id=61556314889090"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/people/Dglv-interior/61579611314221/"><i class="fab fa-facebook-f"></i></a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/dkhomedecorz"><i class="fab fa-twitter"></i></a>
+                    <a href="https://x.com/Dglv_interior"><i class="fab fa-twitter"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/dkhomedecorz"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/dglv_interior/"><i class="fab fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/dk-homes-decorz-b106262b1/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/dglv-interior-b3b103381/"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/@DGLVInterior"><i class="fab fa-youtube"></i></a>
                   </li>
                 </ul>
               </div>
@@ -708,10 +755,10 @@
             <a href="https://www.facebook.com/people/Dk-Homedecroz/"><i class="fab fa-facebook"></i></a>
           </li>
           <li>
-            <a href="https://twitter.com/dkhomedecorz"><i class="fab fa-twitter"></i></a>
+            <a href="https://x.com/Dglv_interior"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
-            <a href="https://www.instagram.com/dkhomedecorz"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/dglv_interior/"><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
       </div>
@@ -721,8 +768,7 @@
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
     </div>
-    <script src="js/custom-script.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.appear.min.js"></script>
