@@ -79,7 +79,7 @@
         if (loader) {
           setTimeout(() => {
             loader.style.opacity = "0";
-            loader.style.transition = "opacity 1s ease";
+            loader.style.transition = "opacity 1.5s ease";
             setTimeout(() => (loader.style.display = "none"), 1000);
           }, 1000); // keeps loader visible briefly
         }
@@ -93,7 +93,9 @@
         <div class="main-menu-wrapper" style="background: transparent">
           <div class="main-menu-logo">
             <a href="index.html">
-              <img src="images/logo/white-transperent.png" width="165" height="72" alt="logo" />
+              <img src="images/logo/white-transperent.png" alt="logo" class="logo">
+
+              <!-- <img src="images/logo/white-transperent.png" width="165" height="72" alt="logo" /> -->
             </a>
           </div>
           <ul class="main-nav-menu">
